@@ -14,7 +14,7 @@ pygmentsCodefencesGuessSyntax = true
   logo = "img/agenda_logo.png" # Expecting square dimensions
   favicon = "img/agenda_logo.svg"
   dateFormat = "2. January, 2006"
-  commit = false
+  commit = "https://github.com/Sinhk/romnor-agenda2021/tree/"
   rss = false
   comments = true
   readingTime = true
@@ -23,7 +23,6 @@ pygmentsCodefencesGuessSyntax = true
   socialShare = true
   delayDisqus = true
   showRelatedPosts = true
-  commit = "https://github.com/Sinhk/romnor-agenda2021/tree/"
 
 [[menu.main]]
     name = "Info"
