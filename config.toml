@@ -1,4 +1,4 @@
-baseURL = "http://agenda.romnorkrets.no/"
+baseURL = "https://agenda.romnorkrets.no/"
 DefaultContentLanguage = "no"
 languageCode = "nb-no"
 title = "Agenda 2021"
