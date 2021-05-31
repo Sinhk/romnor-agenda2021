@@ -23,6 +23,7 @@ pygmentsCodefencesGuessSyntax = true
   socialShare = true
   delayDisqus = true
   showRelatedPosts = true
+  commit = "https://github.com/Sinhk/romnor-agenda2021/tree/"
 
 [[menu.main]]
     name = "Info"
