@@ -1,0 +1,27 @@
+baseURL = "http://agenda.romnorkrets.com/"
+languageCode = "nb-no"
+title = "Agenda 2021"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
+[Params]
+  logo = "img/agenda_logo.png" # Expecting square dimensions
+  dateFormat = "2. january, 2006"
+  commit = false
+  rss = false
+  comments = true
+  readingTime = true
+  wordCount = true
+  useHLJS = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
+
+[[menu.main]]
+    name = "Info"
+    url = ""
+    weight = 1
