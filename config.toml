@@ -11,6 +11,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [Params]
   subtitle = "infoside om Agenda 2021 i Romsdal og Nordmøre krets"
+  mainSections = ["info"]
   logo = "img/agenda_logo.png" # Expecting square dimensions
   favicon = "img/agenda_logo.svg"
   dateFormat = "2. January, 2006"
@@ -28,3 +29,8 @@ pygmentsCodefencesGuessSyntax = true
     name = "Info"
     url = ""
     weight = 1
+
+[[menu.main]]
+    name = "Nyheter"
+    url = "nyheter/"
+    weight = 2
