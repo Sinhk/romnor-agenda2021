@@ -1,5 +1,5 @@
 baseURL = "https://agenda.romnorkrets.no/"
-DefaultContentLanguage = "no"
+defaultContentLanguage = "no"
 languageCode = "nb-no"
 title = "Agenda 2021"
 theme = "beautifulhugo"
@@ -8,10 +8,11 @@ pygmentsStyle = "trac"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
+pluralizelisttitles = false
 
 [Params]
   subtitle = "infoside om Agenda 2021 i Romsdal og Nordmøre krets"
-  mainSections = ["info"]
+  mainSections = ["info","nyheter"]
   logo = "img/agenda_logo.png" # Expecting square dimensions
   favicon = "img/agenda_logo.svg"
   dateFormat = "2. January, 2006"
@@ -34,3 +35,13 @@ pygmentsCodefencesGuessSyntax = true
     name = "Nyheter"
     url = "nyheter/"
     weight = 2
+
+[[menu.main]]
+    name = "Bilder"
+    url = "page/bilder/"
+    weight = 3
+
+[languages]
+  [languages.no]
+    title = "Agenda 2021"
+    weight = 1
