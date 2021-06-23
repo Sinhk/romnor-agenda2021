@@ -41,6 +41,11 @@ pluralizelisttitles = false
     url = "page/bilder/"
     weight = 3
 
+[[menu.main]]
+    name = "Korona-screening"
+    url = "page/korona-screening/"
+    weight = 4
+
 [languages]
   [languages.no]
     title = "Agenda 2021"
