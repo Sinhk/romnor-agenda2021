@@ -2,7 +2,6 @@
 title: Info til troppene
 author: Odd Kjetil
 date: 2021-06-23T00:00:00+02:00
-draft: true
 
 ---
 # Info til troppene
