@@ -38,12 +38,12 @@ pluralizelisttitles = false
 
 [[menu.main]]
     name = "Bilder"
-    url = "page/bilder/"
+    url = "side/bilder/"
     weight = 3
 
 [[menu.main]]
     name = "Korona-screening"
-    url = "page/korona-screening/"
+    url = "side/korona-screening/"
     weight = 4
 
 [languages]
