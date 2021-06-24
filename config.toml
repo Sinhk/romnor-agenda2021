@@ -1,6 +1,6 @@
 baseURL = "https://agenda.romnorkrets.no/"
-defaultContentLanguage = "no"
-languageCode = "nb-no"
+defaultContentLanguage = "nb"
+languageCode = "nb"
 title = "Agenda 2021"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
@@ -11,18 +11,17 @@ pygmentsCodefencesGuessSyntax = true
 pluralizelisttitles = false
 
 [Params]
-  subtitle = "infoside om Agenda 2021 i Romsdal og Nordmøre krets"
+  subtitle = "infoside for Agenda 2021 i Romsdal og Nordmøre krets"
   mainSections = ["info","nyheter"]
   logo = "img/agenda_logo.png" # Expecting square dimensions
   favicon = "img/agenda_logo.svg"
-  dateFormat = "2. January, 2006"
   commit = "https://github.com/Sinhk/romnor-agenda2021/tree/"
   rss = false
   comments = true
   readingTime = true
   wordCount = true
   useHLJS = true
-  socialShare = true
+  socialShare = false
   delayDisqus = true
   showRelatedPosts = true
 
@@ -47,6 +46,6 @@ pluralizelisttitles = false
     weight = 4
 
 [languages]
-  [languages.no]
+  [languages.nb]
     title = "Agenda 2021"
     weight = 1
