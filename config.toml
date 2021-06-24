@@ -31,10 +31,10 @@ pluralizelisttitles = false
     url = ""
     weight = 1
 
-[[menu.main]]
-    name = "Nyheter"
-    url = "nyheter/"
-    weight = 2
+#[[menu.main]]
+#    name = "Nyheter"
+#    url = "nyheter/"
+#    weight = 2
 
 [[menu.main]]
     name = "Bilder"
