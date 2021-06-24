@@ -2,7 +2,7 @@
 title: Korona-screening
 author: ''
 date: 
-draft: true
+draft: false
 
 ---
 ### Kommer
