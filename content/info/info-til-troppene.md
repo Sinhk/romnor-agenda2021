@@ -2,7 +2,7 @@
 title: Info til troppene
 author: Odd Kjetil
 date: 2021-06-23T00:00:00+02:00
-
+summary: Info om smittevern og andre viktige ting
 ---
 # Info til troppene
 

@@ -2,18 +2,22 @@ baseURL = "https://agenda.romnorkrets.no/"
 defaultContentLanguage = "nb"
 languageCode = "nb"
 title = "Agenda 2021"
-theme = "beautifulhugo"
+theme = "timer-hugo"
 metaDataFormat = "yaml"
-pygmentsStyle = "trac"
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
+
+#pygmentsStyle = "trac"
+#pygmentsUseClasses = true
+#pygmentsCodeFences = true
+#pygmentsCodefencesGuessSyntax = true
 pluralizelisttitles = false
 
 [Params]
+  home = "Info"
   subtitle = "infoside for Agenda 2021 i Romsdal og Nordmøre krets"
+  description = "infoside for Agenda 2021 i Romsdal og Nordmøre krets"
   mainSections = ["info","nyheter"]
-  logo = "img/agenda_logo.png" # Expecting square dimensions
+  dateFormat = "02.01.2006"
+  logo = "img/agenda_logo_croped_small.png" 
   favicon = "img/agenda_logo.svg"
   commit = "https://github.com/Sinhk/romnor-agenda2021/tree/"
   rss = false
@@ -27,23 +31,34 @@ pluralizelisttitles = false
 
 [[menu.main]]
     name = "Info"
-    url = ""
+    url = "info"
     weight = 1
 
 #[[menu.main]]
 #    name = "Nyheter"
-#    url = "nyheter/"
+#    url = "nyheter"
 #    weight = 2
 
 [[menu.main]]
     name = "Bilder"
-    url = "side/bilder/"
+    url = "side/bilder"
     weight = 3
 
 [[menu.main]]
     name = "Korona-screening"
-    url = "side/korona-screening/"
+    url = "side/korona-screening"
     weight = 4
+
+[[menu.main]]
+    name = "Program"
+    url = "side/program"
+    weight = 5
+
+[Params.banner]
+  enable  = true
+  heading = "Romsdal og Nordmøre krets's Agenda 2021"
+  description = "3. - 10. juli på Setnesmoen"
+  bgImage = "img/leir.jpg"
 
 [languages]
   [languages.nb]
