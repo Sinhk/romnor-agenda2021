@@ -14,7 +14,10 @@ Vi hjelper hverandre med å holde alle trygge og friske.
  ---
 
 {{<rawhtml>}}
-<form>
+<form name="screening" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+    <p class="hidden">
+        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+    </p>
     <div class="form-group field-navn">
         <label for="navn">Navn</label>
         <input type="text" class="form-control" name="navn" id="navn" required="required" aria-required="true">
@@ -32,7 +35,7 @@ Vi hjelper hverandre med å holde alle trygge og friske.
         <input type="text" class="form-control" name="utfyller" id="utfyller" required="required" aria-required="true">
     </div>
     <div class="form-group field-har-korona">
-        <label for="har-korona" >Har deltakeren, etter å ha tatt en test, fått påvist koronavirus?</label>
+        <label for="har-korona"><strong>Har deltakeren, etter å ha tatt en test, fått påvist koronavirus?</strong></label>
         <div class="radio-group">
             <div>
                 <input name="har-korona" id="har-korona-0" required="required" aria-required="true" value="option-1" type="radio">
@@ -49,7 +52,7 @@ Vi hjelper hverandre med å holde alle trygge og friske.
         </div>
     </div>
     <div class="form-group field-symptomer">
-        <label for="symptomer">Har deltakeren hatt en eller flere av disse plagene i dag eller i løpet av det siste døgnet? (Hvis ja, kryss av):</label>
+        <label for="symptomer"><strong>Har deltakeren hatt en eller flere av disse plagene i dag eller i løpet av det siste døgnet? (Hvis ja, kryss av):</strong></label>
         <div class="checkbox-group">
             <div class="formbuilder-checkbox">
                 <input name="symptomer[]" id="symptomer-0" required="required" aria-required="true" value="option-1" type="checkbox">
@@ -94,7 +97,7 @@ Vi hjelper hverandre med å holde alle trygge og friske.
         </div>
     </div>
    <div class="form-group field-spredning">
-        <label for="spredning" class="">Gjelder noe av dette for deltakeren?</label>
+        <label for="spredning" class=""><strong>Gjelder noe av dette for deltakeren?</strong></label>
         <div class="checkbox-group">
             <div class="formbuilder-checkbox">
                 <input name="spredning[]" id="spredning-0" value="option-1" type="checkbox">
@@ -123,7 +126,7 @@ Vi hjelper hverandre med å holde alle trygge og friske.
         </div>
     </div>
     <div class="form-group field-frisk">
-        <label for="frisk" class="">Jeg bekrefter at deltakeren er frisk og symptomfri</label>
+        <label for="frisk" class=""><strong>Jeg bekrefter at deltakeren er frisk og symptomfri</strong></label>
         <div class="radio-group">
             <div class="formbuilder-radio">
                 <input name="frisk" id="frisk-0" required="required" aria-required="true" value="ja" type="radio">
@@ -136,7 +139,7 @@ Vi hjelper hverandre med å holde alle trygge og friske.
         </div>
     </div>
     <div>
-        <button disabled type="submit">IKKE AKTIV ENDA</button>
+        <button type="submit">IKKE AKTIV ENDA</button>
     </div>
 </form>
 
