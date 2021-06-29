@@ -38,15 +38,15 @@ Vi hjelper hverandre med å holde alle trygge og friske.
         <label for="har-korona"><strong>Har deltakeren, etter å ha tatt en test, fått påvist koronavirus?</strong></label>
         <div class="radio-group">
             <div>
-                <input name="har-korona" id="har-korona-0" required="required" aria-required="true" value="option-1" type="radio">
+                <input name="har-korona" id="har-korona-0" value="option-1" type="radio">
                 <label for="har-korona-0">Ja</label>
             </div>
             <div>
-                <input name="har-korona" id="har-korona-1" required="required" aria-required="true" value="option-2" type="radio">
+                <input name="har-korona" id="har-korona-1" value="option-2" type="radio">
                 <label for="har-korona-1">Ja, men er friskmeldt</label>
             </div>
             <div>
-                <input name="har-korona" id="har-korona-2" required="required" aria-required="true" value="option-3" type="radio">
+                <input name="har-korona" id="har-korona-2" value="option-3" type="radio">
                 <label for="har-korona-2">Nei</label>
             </div>
         </div>
@@ -55,43 +55,43 @@ Vi hjelper hverandre med å holde alle trygge og friske.
         <label for="symptomer"><strong>Har deltakeren hatt en eller flere av disse plagene i dag eller i løpet av det siste døgnet? (Hvis ja, kryss av):</strong></label>
         <div class="checkbox-group">
             <div class="formbuilder-checkbox">
-                <input name="symptomer[]" id="symptomer-0" required="required" aria-required="true" value="option-1" type="checkbox">
+                <input name="symptomer[]" id="symptomer-0" value="option-1" type="checkbox">
                 <label for="symptomer-0">Hoste</label>
             </div>
             <div class="formbuilder-checkbox">
-                <input name="symptomer[]" id="symptomer-1" required="required" aria-required="true" type="checkbox">
+                <input name="symptomer[]" id="symptomer-1" type="checkbox">
                 <label for="symptomer-1">Feber</label>
             </div>
             <div class="formbuilder-checkbox">
-                <input name="symptomer[]" id="symptomer-2" required="required" aria-required="true" type="checkbox">
+                <input name="symptomer[]" id="symptomer-2" type="checkbox">
                 <label for="symptomer-2">Følelse av tungpustethet</label>
             </div>
             <div class="formbuilder-checkbox">
-                <input name="symptomer[]" id="symptomer-3" required="required" aria-required="true" type="checkbox">
+                <input name="symptomer[]" id="symptomer-3" type="checkbox">
                 <label for="symptomer-3">Tett eller rennende nese</label>
             </div>
             <div class="formbuilder-checkbox">
-                <input name="symptomer[]" id="symptomer-4" required="required" aria-required="true" type="checkbox">
+                <input name="symptomer[]" id="symptomer-4" type="checkbox">
                 <label for="symptomer-4">Vond eller sår hals</label>
             </div>
             <div class="formbuilder-checkbox">
-                <input name="symptomer[]" id="symptomer-5" required="required" aria-required="true" type="checkbox">
+                <input name="symptomer[]" id="symptomer-5" type="checkbox">
                 <label for="symptomer-5">Tap av smaks- eller luktesans</label>
             </div>
             <div class="formbuilder-checkbox">
-                <input name="symptomer[]" id="symptomer-6" required="required" aria-required="true" type="checkbox">
+                <input name="symptomer[]" id="symptomer-6" type="checkbox">
                 <label for="symptomer-6">Diaré eller magesmerter</label>
             </div>
             <div class="formbuilder-checkbox">
-                <input name="symptomer[]" id="symptomer-7" required="required" aria-required="true" type="checkbox">
+                <input name="symptomer[]" id="symptomer-7" type="checkbox">
                 <label for="symptomer-7">Nyoppståtte ryggsmerter som ikke har annen forklaring</label>
             </div>
             <div class="formbuilder-checkbox">
-                <input name="symptomer[]" id="symptomer-8" required="required" aria-required="true" type="checkbox">
+                <input name="symptomer[]" id="symptomer-8" type="checkbox">
                 <label for="symptomer-8">Hodepine</label>
             </div>
             <div class="formbuilder-checkbox">
-                <input name="symptomer[]" id="symptomer-9" required="required" aria-required="true" type="checkbox">
+                <input name="symptomer[]" id="symptomer-9" type="checkbox">
                 <label for="symptomer-9">Nei, ingen symptomer på koronavirus</label>
             </div>
         </div>
@@ -133,7 +133,7 @@ Vi hjelper hverandre med å holde alle trygge og friske.
                 <label for="frisk-0">Ja</label>
             </div>
             <div class="formbuilder-radio">
-                <input name="frisk" id="frisk-1" required="required" aria-required="true" value="nei" type="radio">
+                <input name="frisk" id="frisk-1" value="nei" type="radio">
                 <label for="frisk-1">Nei</label>
             </div>
         </div>
