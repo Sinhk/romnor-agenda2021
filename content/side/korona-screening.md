@@ -60,7 +60,7 @@ Vi hjelper hverandre med å holde alle trygge og friske.
         <label for="dato">Dato</label>
         <input type="date" id="datePicker" class="form-control" name="dato" id="dato" disabled min="2021-07-01">
         <div class="invalid-feedback">
-          Skjemaet kan ikke fylles ut før 1. juni
+          Skjemaet kan ikke fylles ut før 1. juli
         </div>
     </div>
     <fieldset>
