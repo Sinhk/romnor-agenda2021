@@ -2,7 +2,6 @@
 title: Smittevern
 author: Joar Ulset
 date: 2021-06-30T00:00:00+02:00
-draft: true
 
 ---
 **Alle som skal på leiren skal gjennomføre en “korona-screening”.** Screeningen blir nettbasert og skal gjennomføres en til tre dager før leiren av alle som skal på leiren (sammen med foresatte). Screeningen skal fange opp de som har symptomer, er i karantene eller ventekarantene, de som har vært i områder med mye smitte og lignende.
