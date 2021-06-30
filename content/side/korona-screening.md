@@ -30,7 +30,7 @@ Vi hjelper hverandre med å holde alle trygge og friske.
     </div>
     <div class="form-group">
         <label for="speidergruppe">Speidergruppe</label>
-        <select class="form-control" id="speidergruppe" required>
+        <select class="form-control" id="speidergruppe" name="speidergruppe" required>
             <option hidden disabled selected value>---</option>
             <option>1. Batnfjord speidergruppe</option>
             <option>3. Fræna Aureosen</option>
@@ -58,12 +58,12 @@ Vi hjelper hverandre med å holde alle trygge og friske.
     </div>
     <div class="form-group">
         <label for="dato">Dato</label>
-        <input type="date" id="datePicker" class="form-control" name="dato" id="dato" disabled min="2021-06-01">
+        <input type="date" id="datePicker" class="form-control" name="dato" id="dato" disabled min="2021-07-01">
         <div class="invalid-feedback">
           Skjemaet kan ikke fylles ut før 1. juni
         </div>
     </div>
-    <fieldset class="form-group">
+    <fieldset>
         <legend>Har deltakeren, etter å ha tatt en test, fått påvist koronavirus?</legend>
         <div class="form-check"><input class="form-check-input" type="radio" name="har-korona" id="har-korona-1" value="Ja" required><label class="form-check-label" for="har-korona-1"> Ja</label></div>
         <div class="form-check"><input class="form-check-input" type="radio" name="har-korona" id="har-korona-2" value="Ja, men er friskmeldt" required><label class="form-check-label" for="har-korona-2"> Ja, men er friskmeldt</label></div>
@@ -153,6 +153,8 @@ Vi hjelper hverandre med å holde alle trygge og friske.
                 if (form.checkValidity() === false) {
                 event.preventDefault();
                 event.stopPropagation();
+                }else{
+                    picker.disabled = false;
                 }
                 form.classList.add('was-validated');
             }, false);
