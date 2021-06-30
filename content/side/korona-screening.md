@@ -116,18 +116,17 @@ Vi hjelper hverandre med å holde alle trygge og friske.
             <div class="invalid-feedback">Må velge en</div>
         </div>
     </fieldset>
-    <fieldset>
-        <legend>Jeg bekrefter at deltakeren er frisk og symptomfri</legend>
+    <div class="form-group" id="symptomfri-group">
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="frisk" value="Ja" required id="frisk-1"> 
-            <label class="form-check-label" for="frisk-1">Ja</label>
+            <input class="form-check-input" type="checkbox" value="Ja" id="symptomfri" name="symptomfri" required>
+            <label class="form-check-label" for="symptomfri">
+                Jeg bekrefter at deltakeren er frisk og symptomfri
+            </label>
+            <div class="invalid-feedback">
+                Deltaker med symptomer kan ikke komme på leir uten vurdering av lege. 
+            </div>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="frisk" value="Nei" required id="frisk-2"> 
-            <label class="form-check-label" for="frisk-2">Nei</label>
-            <div class="invalid-feedback">Må velge en</div>
-        </div>
-    </fieldset>
+    </div>
     <br>
     <div>
         <button type="submit" class="jsonly btn btn-primary">Send inn</button>
