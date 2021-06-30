@@ -5,6 +5,6 @@ date:
 draft: false
 ---
 
-# Screening skjema sendt inn
+# Screening-skjema sendt inn
 
 [Tilbake til skjema](/side/korona-screening)
