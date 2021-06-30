@@ -13,3 +13,4 @@ fields:
   label: date
 pages:
 - content/info/info-til-troppene.md
+- content/side/smittevern.md
