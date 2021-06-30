@@ -133,3 +133,16 @@ $('input[name="symptomer[]"]').on('change', function(){
         }
     }
 });
+
+$('input[name="spredning[]"]').on('change', function(){
+    if ($(this).attr('type') == 'radio' ) {
+        if ( $(this).prop('checked') ) {
+            $('input[name="spredning[]"][type="checkbox"]').prop('checked', false);
+        }
+    }
+    else {
+        if ( $(this).prop('checked') ) {
+            $('input[name="spredning[]"][type="radio"]').prop('checked', false);
+        }
+    }
+});

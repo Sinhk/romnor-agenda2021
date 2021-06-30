@@ -67,9 +67,9 @@ Vi hjelper hverandre med å holde alle trygge og friske.
     </div>
     <fieldset>
         <legend>Har deltakeren, etter å ha tatt en test, fått påvist koronavirus?</legend>
-        <div class="form-check"><input class="form-check-input" type="radio" name="har-korona" id="har-korona-1" value="Ja" required><label class="form-check-label" for="har-korona-1"> Ja</label></div>
-        <div class="form-check"><input class="form-check-input" type="radio" name="har-korona" id="har-korona-2" value="Ja, men er friskmeldt" required><label class="form-check-label" for="har-korona-2"> Ja, men er friskmeldt</label></div>
-        <div class="form-check"><input class="form-check-input" type="radio" name="har-korona" id="har-korona-3" value="Nei" required><label class="form-check-label" for="har-korona-3"> Nei</label>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="har-korona" id="har-korona-1" value="Ja" required> Ja</label></div>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="har-korona" id="har-korona-2" value="Ja, men er friskmeldt" required> Ja, men er friskmeldt</label></div>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="har-korona" id="har-korona-3" value="Nei" required> Nei</label>
             <div class="invalid-feedback">
                 Må velge en
             </div>
@@ -91,29 +91,17 @@ Vi hjelper hverandre med å holde alle trygge og friske.
     <fieldset>
         <legend>Gjelder noe av dette for deltakeren?</legend>
         <div class="form-check">
-            <input class="form-check-input" type="radio" id="spredning-1" name="spredning" required value="Har vært utenfor Norge i løpet av de siste 14 dagene"> 
-            <label class="form-check-label" for="spredning-1">Har vært utenfor Norge i løpet av de siste 14 dagene</label>
-        </div>
+            <label class="form-check-label"><input class="form-check-input" type="checkbox" id="spredning-1" name="spredning[]" value="Har vært utenfor Norge i løpet av de siste 14 dagene"> Har vært utenfor Norge i løpet av de siste 14 dagene</label></div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" id="spredning-2" name="spredning" required value="Har vært i nærkontakt med noen som har påvist koronavirus"> 
-            <label class="form-check-label" for="spredning-2">Har vært i nærkontakt med noen som har påvist koronavirus</label>
-        </div>
+            <label class="form-check-label"><input class="form-check-input" type="checkbox" id="spredning-2" name="spredning[]" value="Har vært i nærkontakt med noen som har påvist koronavirus"> Har vært i nærkontakt med noen som har påvist koronavirus</label></div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" id="spredning-3" name="spredning" required value="Er satt opp til time for testing for koronavirus"> 
-            <label class="form-check-label" for="spredning-3">Er satt opp til time for testing for koronavirus</label>
-        </div>
+            <label class="form-check-label"><input class="form-check-input" type="checkbox" id="spredning-3" name="spredning[]" value="Er satt opp til time for testing for koronavirus"> Er satt opp til time for testing for koronavirus</label></div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" id="spredning-4" name="spredning" required value="Bor i samme husstand som noen som skal testes for koronavirus"> 
-            <label class="form-check-label" for="spredning-4">Bor i samme husstand som noen som skal testes for koronavirus</label>
-        </div>
+            <label class="form-check-label"><input class="form-check-input" type="checkbox" id="spredning-4" name="spredning[]" value="Bor i samme husstand som noen som skal testes for koronavirus"> Bor i samme husstand som noen som skal testes for koronavirus</label></div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" id="spredning-5" name="spredning" required value="Bor i samme husstand som noen som har fått påvist koronavirus og ikke er friskmeldt enda"> 
-            <label class="form-check-label" for="spredning-5">Bor i samme husstand som noen som har fått påvist koronavirus og ikke er friskmeldt enda</label>
-        </div>
+            <label class="form-check-label"><input class="form-check-input" type="checkbox" id="spredning-5" name="spredning[]" value="Bor i samme husstand som noen som har fått påvist koronavirus og ikke er friskmeldt enda"> Bor i samme husstand som noen som har fått påvist koronavirus og ikke er friskmeldt enda</label></div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" id="spredning-6" name="spredning" required value="Nei"> 
-            <label class="form-check-label" for="spredning-6">Nei, ingen av alternativene gjelder for deltakeren</label>
-            <div class="invalid-feedback">Må velge en</div>
+            <label class="form-check-label"><input class="form-check-input" type="radio" id="spredning-6" name="spredning[]" value="Nei"> Nei, ingen av alternativene gjelder for deltakeren</label>
         </div>
     </fieldset>
     <div class="form-group" id="symptomfri-group">
