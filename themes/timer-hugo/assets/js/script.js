@@ -120,3 +120,16 @@ $(".fancybox").fancybox({
         }
     }
 });
+
+$('input[name="symptomer[]"]').on('change', function(){
+    if ($(this).attr('type') == 'radio' ) {
+        if ( $(this).prop('checked') ) {
+            $('input[name="symptomer[]"][type="checkbox"]').prop('checked', false);
+        }
+    }
+    else {
+        if ( $(this).prop('checked') ) {
+            $('input[name="symptomer[]"][type="radio"]').prop('checked', false);
+        }
+    }
+});

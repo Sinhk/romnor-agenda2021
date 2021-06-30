@@ -13,65 +13,153 @@ Vi hjelper hverandre med å holde alle trygge og friske.
  ---
 
 {{<rawhtml>}}
-<form name="screening" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="/side/screening-sendt">
+<noscript>
+    <div class="alert alert-danger" role="alert">Din nettleser støtter ikke JavaScript, eller har det skrudd av. <br>Dette skjemaet krever JavaScript</div>
+    <style> .jsonly { display: none } </style>
+</noscript>
+<form name="screening" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="/side/screening-sendt" class="needs-validation" novalidate>
     <p class="hidden">
         <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
     </p>
-    <div class="form-group field-navn">
+    <div class="form-group">
         <label for="navn">Navn</label>
-        <input type="text" class="form-control" name="navn" id="navn" required="required" aria-required="true">
+        <input type="text" class="form-control" name="navn" id="navn" required>
+        <div class="invalid-feedback">
+            Navn er påkrevd
+        </div>
     </div>
-    <div class="form-group field-speidergruppe">
+    <div class="form-group">
         <label for="speidergruppe">Speidergruppe</label>
-        <input type="text" class="form-control" name="speidergruppe" id="speidergruppe" required="required" aria-required="true">
+        <select class="form-control" id="speidergruppe" required>
+            <option hidden disabled selected value>---</option>
+            <option>1. Batnfjord speidergruppe</option>
+            <option>3. Fræna Aureosen</option>
+            <option>Hustadvika Eide</option>
+            <option>Moldespeiderne</option>
+            <option>3. Rauma Isfjorden</option>
+            <option>4. Rauma Innfjorden</option>
+            <option>Annen</option>
+        </select>
+        <div class="invalid-feedback">
+            Speidergruppe er påkrevd
+        </div>
     </div>
-    <div class="form-group field-patrulje">
+    <div class="form-group">
         <label for="patrulje">Patrulje</label>
-        <input type="text" class="form-control" name="patrulje" id="patrulje" required="required" aria-required="true">
+        <input type="text" class="form-control" name="patrulje" id="patrulje">
         <small id="patruljeHelp" class="form-text text-muted">Skriv "Stab" om du er stab.</small>
     </div>
-    <div class="form-group field-utfyller">
+    <div class="form-group">
         <label for="utfyller">Navn på den som fyller ut skjemaet (Må være over 18 år):</label>
-        <input type="text" class="form-control" name="utfyller" id="utfyller" required="required" aria-required="true">
+        <input type="text" class="form-control" name="utfyller" id="utfyller" required>
+        <div class="invalid-feedback">
+            Utfyller er påkrevd
+        </div>
     </div>
-    <fieldset>
+    <div class="form-group">
+        <label for="dato">Dato</label>
+        <input type="date" id="datePicker" class="form-control" name="dato" id="dato" disabled min="2021-06-01">
+        <div class="invalid-feedback">
+          Skjemaet kan ikke fylles ut før 1. juni
+        </div>
+    </div>
+    <fieldset class="form-group">
         <legend>Har deltakeren, etter å ha tatt en test, fått påvist koronavirus?</legend>
-        <div><label><input type="radio" name="har-korona" value="Ja"> Ja</label></div>
-        <div><label><input type="radio" name="har-korona" value="Ja, men er friskmeldt"> Ja, men er friskmeldt</label></div>
-        <div><label><input type="radio" name="har-korona" value="Nei"> Nei</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="har-korona" id="har-korona-1" value="Ja" required><label class="form-check-label" for="har-korona-1"> Ja</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="har-korona" id="har-korona-2" value="Ja, men er friskmeldt" required><label class="form-check-label" for="har-korona-2"> Ja, men er friskmeldt</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="har-korona" id="har-korona-3" value="Nei" required><label class="form-check-label" for="har-korona-3"> Nei</label>
+            <div class="invalid-feedback">
+                Må velge en
+            </div>
+        </div>
     </fieldset>
-    <fieldset>
+     <fieldset>
         <legend>Har deltakeren hatt en eller flere av disse plagene i dag eller i løpet av det siste døgnet? (Hvis ja, kryss av):</legend>
-        <div><label><input type="checkbox" name="symptomer[]" value="Hoste"> Hoste</label>
-        <div><label><input type="checkbox" name="symptomer[]" value="Feber"> Feber</label>
-        <div><label><input type="checkbox" name="symptomer[]" value="Følelse av tungpustethet"> Følelse av tungpustethet</label>
-        <div><label><input type="checkbox" name="symptomer[]" value="Tett eller rennende nese"> Tett eller rennende nese</label>
-        <div><label><input type="checkbox" name="symptomer[]" value="Vond eller sår hals"> Vond eller sår hals</label>
-        <div><label><input type="checkbox" name="symptomer[]" value="Tap av smaks- eller luktesans"> Tap av smaks- eller luktesans</label>
-        <div><label><input type="checkbox" name="symptomer[]" value="Diaré eller magesmerter"> Diaré eller magesmerter</label>
-        <div><label><input type="checkbox" name="symptomer[]" value="Nyoppståtte ryggsmerter som ikke har annen forklaring"> Nyoppståtte ryggsmerter som ikke har annen forklaring</label>
-        <div><label><input type="checkbox" name="symptomer[]" value="Hodepine"> Hodepine</label>
-        <div><label><input type="checkbox" name="symptomer[]" value="Nei, ingen symptomer på koronavirus"> Nei, ingen symptomer på koronavirus</label>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" name="symptomer[]" value="Hoste"> Hoste</label></div>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" name="symptomer[]" value="Feber"> Feber</label></div>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" name="symptomer[]" value="Følelse av tungpustethet"> Følelse av tungpustethet</label></div>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" name="symptomer[]" value="Tett eller rennende nese"> Tett eller rennende nese</label></div>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" name="symptomer[]" value="Vond eller sår hals"> Vond eller sår hals</label></div>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" name="symptomer[]" value="Tap av smaks- eller luktesans"> Tap av smaks- eller luktesans</label></div>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" name="symptomer[]" value="Diaré eller magesmerter"> Diaré eller magesmerter</label></div>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" name="symptomer[]" value="Nyoppståtte ryggsmerter som ikke har annen forklaring"> Nyoppståtte ryggsmerter som ikke har annen forklaring</label></div>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" name="symptomer[]" value="Hodepine"> Hodepine</label></div>
+        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="symptomer[]" value="Nei"> Nei, ingen symptomer på koronavirus</label></div>
     </fieldset>
     <fieldset>
         <legend>Gjelder noe av dette for deltakeren?</legend>
-        <div><label><input type="checkbox" name="spredning[]" value="Har vært utenfor Norge i løpet av de siste 14 dagene"> Har vært utenfor Norge i løpet av de siste 14 dagene</label>
-        <div><label><input type="checkbox" name="spredning[]" value="Har vært i nærkontakt med noen som har påvist koronavirus"> Har vært i nærkontakt med noen som har påvist koronavirus</label>
-        <div><label><input type="checkbox" name="spredning[]" value="Er satt opp til time for testing for koronavirus"> Er satt opp til time for testing for koronavirus</label>
-        <div><label><input type="checkbox" name="spredning[]" value="Bor i samme husstand som noen som skal testes for koronaviru"> Bor i samme husstand som noen som skal testes for koronaviru</label>
-        <div><label><input type="checkbox" name="spredning[]" value="Bor i samme husstand som noen som har fått påvist koronavirus og ikke er friskmeldt enda"> Bor i samme husstand som noen som har fått påvist koronavirus og ikke er friskmeldt enda</label>
-        <div><label><input type="checkbox" name="spredning[]" value="Nei, ingen av alternativene gjelder for deltakeren"> Nei, ingen av alternativene gjelder for deltakeren</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="spredning-1" name="spredning" required value="Har vært utenfor Norge i løpet av de siste 14 dagene"> 
+            <label class="form-check-label" for="spredning-1">Har vært utenfor Norge i løpet av de siste 14 dagene</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="spredning-2" name="spredning" required value="Har vært i nærkontakt med noen som har påvist koronavirus"> 
+            <label class="form-check-label" for="spredning-2">Har vært i nærkontakt med noen som har påvist koronavirus</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="spredning-3" name="spredning" required value="Er satt opp til time for testing for koronavirus"> 
+            <label class="form-check-label" for="spredning-3">Er satt opp til time for testing for koronavirus</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="spredning-4" name="spredning" required value="Bor i samme husstand som noen som skal testes for koronavirus"> 
+            <label class="form-check-label" for="spredning-4">Bor i samme husstand som noen som skal testes for koronavirus</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="spredning-5" name="spredning" required value="Bor i samme husstand som noen som har fått påvist koronavirus og ikke er friskmeldt enda"> 
+            <label class="form-check-label" for="spredning-5">Bor i samme husstand som noen som har fått påvist koronavirus og ikke er friskmeldt enda</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="spredning-6" name="spredning" required value="Nei"> 
+            <label class="form-check-label" for="spredning-6">Nei, ingen av alternativene gjelder for deltakeren</label>
+            <div class="invalid-feedback">Må velge en</div>
+        </div>
     </fieldset>
-     <fieldset>
+    <fieldset>
         <legend>Jeg bekrefter at deltakeren er frisk og symptomfri</legend>
-        <div><label><input type="radio" name="frisk" value="Ja" required> Ja</label></div>
-        <div><label><input type="radio" name="frisk" value="Nei"> Nei</label></div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="frisk" value="Ja" required id="frisk-1"> 
+            <label class="form-check-label" for="frisk-1">Ja</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="frisk" value="Nei" required id="frisk-2"> 
+            <label class="form-check-label" for="frisk-2">Nei</label>
+            <div class="invalid-feedback">Må velge en</div>
+        </div>
     </fieldset>
+    <br>
     <div>
-        <button type="submit">IKKE AKTIV ENDA</button>
+        <button type="submit" class="jsonly btn btn-primary">Send inn</button>
     </div>
 </form>
-
+<script>
+    Date.prototype.toDateInputValue = (function() {
+        var local = new Date(this);
+        local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+        return local.toJSON().slice(0,10);
+    });
+    let picker = document.getElementById('datePicker');
+    picker.value = new Date().toDateInputValue();
+    if(picker.value < picker.min){
+        picker.classList.add("is-invalid");
+    }
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+            });
+        }, false);
+    })();
+</script>
 
 {{</rawhtml>}}
 

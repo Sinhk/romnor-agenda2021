@@ -1,3 +1,15 @@
 .hidden {
     display: none;
 }
+
+.btn-primary{
+    background-color: #eab010;
+    border-color: #ebac00;
+}
+
+.btn-primary:hover{
+    background-color: #ce9b10;
+}
+.btn-primary:not(:disabled):not(.disabled):active{
+    background-color: #ffc011;
+}
