@@ -50,9 +50,14 @@ pluralizelisttitles = false
     weight = 4
 
 [[menu.main]]
+    name = "Smittevern"
+    url = "side/smittevern"
+    weight = 5
+
+[[menu.main]]
     name = "Program"
     url = "side/program"
-    weight = 5
+    weight = 6
 
 [Params.banner]
   enable  = true
