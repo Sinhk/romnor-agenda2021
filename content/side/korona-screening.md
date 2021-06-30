@@ -64,7 +64,7 @@ Vi hjelper hverandre med å holde alle trygge og friske.
     </fieldset>
      <fieldset>
         <legend>Jeg bekrefter at deltakeren er frisk og symptomfri</legend>
-        <div><label><input type="radio" name="frisk" value="Ja" required="required" aria-required="true"> Ja</label></div>
+        <div><label><input type="radio" name="frisk" value="Ja" required> Ja</label></div>
         <div><label><input type="radio" name="frisk" value="Nei"> Nei</label></div>
     </fieldset>
     <div>
