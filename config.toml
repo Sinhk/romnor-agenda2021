@@ -59,6 +59,12 @@ pluralizelisttitles = false
     url = "side/program"
     weight = 6
 
+[[menu.main]]
+    name = "Leirsang"
+    url = "side/leirsang"
+    weight = 7
+
+
 [Params.banner]
   enable  = true
   heading = "Romsdal og Nordmøre krets's Agenda 2021"
