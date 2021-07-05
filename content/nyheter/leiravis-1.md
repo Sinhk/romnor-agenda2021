@@ -2,6 +2,7 @@
 title: Agenda times
 date: 2021-07-03T00:00:00.000+02:00
 draft: false
+summary: 1. utgave
 ---
 # **Agenda times**
 
@@ -41,8 +42,7 @@ Til tross for at leiren har vært slitsom og varm, så har den vært gøy.
 
 ### 3. Fræna Aurosen: Anniken
 
-Anniken gleder seg til haik. Hun var på landsleir i Bodø i 2017, og hun synes at Agenda er litt
-annerledes, men at leirfølelsen er den samme. Dagen så langt har vært bra.
+Anniken gleder seg til haik. Hun var på landsleir i Bodø i 2017, og hun synes at Agenda er litt annerledes, men at leirfølelsen er den samme. Dagen så langt har vært bra.
 
 ## Stabspraten
 
@@ -50,11 +50,9 @@ I dag tok våre utegående reportere Sandra og Rakel seg en ekstremt kort tur ti
 
 **Hvordan er det å jobbe på leirkontoret?**
 
-Man får god oversikt over hva som skjer i leiren, sier de. Petter synes det er en artig
-utfordring å jobbe i leirkontoret. – Man får oppleve leiren på en bra måte, og man kommer
+Man får god oversikt over hva som skjer i leiren, sier de. Petter synes det er en artig utfordring å jobbe i leirkontoret. – Man får oppleve leiren på en bra måte, og man kommer
 tett på alle.
 
 **Har det vært bra salg i kiosken så langt?**
 
-Ja, vi hadde noen tekniske problemer siden det er første dagen med kiosk, men det gikk bra
-til slutt, og alle er velkommen tilbake
+Ja, vi hadde noen tekniske problemer siden det er første dagen med kiosk, men det gikk bra til slutt, og alle er velkommen tilbake
